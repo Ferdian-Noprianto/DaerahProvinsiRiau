@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txttittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Data Kabupaten"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/namakabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Kabupaten"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/txttittle"
+                app:layout_constraintTop_toBottomOf="@+id/txttittle"/>
+
+            <EditText
+                android:id="@+id/namabupati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Bupati"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/namakabupaten"
+                app:layout_constraintTop_toBottomOf="@+id/namakabupaten"/>
+
+            <EditText
+                android:id="@+id/luaswilayah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Luas Wilayah"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/namabupati"
+                app:layout_constraintTop_toBottomOf="@+id/namabupati"/>
+
+            <EditText
+                android:id="@+id/tahunberdiri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tahun Berdiri"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/luaswilayah"
+                app:layout_constraintTop_toBottomOf="@+id/luaswilayah"/>
+
+            <EditText
+                android:id="@+id/jumlahpenduduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah Penduduk"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/tahunberdiri"
+                app:layout_constraintTop_toBottomOf="@+id/tahunberdiri"/>
+
+            <Button
+                android:id="@+id/btnsimpan"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Simpan"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="@+id/jumlahpenduduk"
+                app:layout_constraintTop_toBottomOf="@+id/jumlahpenduduk"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
